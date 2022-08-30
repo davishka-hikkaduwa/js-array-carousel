@@ -8,39 +8,61 @@ body {
     font-family: sans-serif;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.carousel-container {
+    width: 100%;
+}
+
 #carousel {
+    width: 80%;
     height: 80vh;
     position: relative;
 }
 
-.item {
+.image-container {
+
+    height: 100%;
+    position: relative;
+}
+
+.image-container .item {
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     display: none;
 }
 
-.item.active {
+.image-container .item.active {
     display: inline-block;
 }
 
 #carousel-nav {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     position: relative;
     z-index: 2;
-    top: 50%;
+    top: -50%;
     transform: translateY(-50%);
+
 }
 
 #carousel-nav button {
     font-size: 34px;
+}
+
+#thumbs {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
 }

@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Array Carousel</title>
 </head>
 
 <body>
     <div class="container">
-        <div id="carousel">
-            <div class="carousel-container">
-                <img class="item active" src="img/01.jpg" alt="img-1">
-                <img class="item" src="img/02.jpg" alt="img-2">
-                <img class="item" src="img/03.jpg" alt="img-3">
-                <img class="item" src="img/04.jpg" alt="img-4">
-                <img class="item" src="img/05.jpg" alt="img-5">
+        <div class="carousel-container">
+            <div id="carousel">
+                <div class="image-container">
+                    <img class="item active" src="img/01.jpg" alt="01.jpg">
+                    <img class="item" src="img/02.jpg" alt="02.jpg">
+                    <img class="item" src="img/03.jpg" alt="03.jpg">
+                    <img class="item" src="img/04.jpg" alt="04.jpg">
+                    <img class="item" src="img/05.jpg" alt="05.jpg">
+                </div>
+                <div id="carousel-nav">
+                    <button id="next">&uarr;</button>
+                    <button id="previous">&darr;</button>
+                </div>
             </div>
-            <div id="carousel-nav">
-                <button id="previous">&larr;</button>
-                <button id="next">&rarr;</button>
+            <div id="thumbs">
+                <img class="item active" src="img/01.jpg" alt="01.jpg">
+                <img class="item" src="img/02.jpg" alt="02.jpg">
+                <img class="item" src="img/03.jpg" alt="03.jpg">
+                <img class="item" src="img/04.jpg" alt="04.jpg">
+                <img class="item" src="img/05.jpg" alt="05.jpg">
             </div>
         </div>
 
